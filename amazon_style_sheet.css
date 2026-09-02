@@ -282,3 +282,10 @@ span{
 .box {
   height: 431px;
 }
+
+@media (max-width: 600px) {
+    .box img {
+        width: 100%;
+        height: auto;
+    }
+}
