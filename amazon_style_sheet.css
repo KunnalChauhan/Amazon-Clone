@@ -283,9 +283,165 @@ span{
   height: 431px;
 }
 
+
 @media (max-width: 600px) {
-    .box img {
-        width: 100%;
+
+    /* Navbar */
+    .navbar {
         height: auto;
+        min-height: 60px;
+        flex-wrap: wrap;
+        padding: 8px 5px;
+        gap: 8px;
+    }
+
+    .nav-logo {
+        width: 80px;
+        height: 45px;
+    }
+
+    .logo {
+        width: 80px;
+        height: 45px;
+    }
+
+    /* Search bar */
+    .nav-search {
+        order: 10;
+        width: 95%;
+        height: 40px;
+        margin: 5px auto;
+    }
+
+    .search-input {
+        min-width: 0;
+    }
+
+    /* Location */
+    .nav-address {
+        display: none;
+    }
+
+    /* Language */
+    .nav-language {
+        display: none;
+    }
+
+    /* Account */
+    .nav-signin {
+        font-size: 12px;
+    }
+
+    .nav-return {
+        display: none;
+    }
+
+    /* Cart */
+    .nav-cart i {
+        font-size: 25px;
+    }
+
+    .nav-cart {
+        font-size: 12px;
+    }
+
+    /* Panel */
+    .panel {
+        height: auto;
+        min-height: 40px;
+        overflow-x: auto;
+        justify-content: flex-start;
+        white-space: nowrap;
+    }
+
+    .panel-ops {
+        width: auto;
+        font-size: 12px;
+    }
+
+    .panel-ops p {
+        margin-left: 5px;
+        padding: 8px;
+    }
+
+    /* Hero */
+    .hero-section {
+        height: 180px;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .hero-mssg {
+        width: 94%;
+        height: auto;
+        min-height: 35px;
+        margin-bottom: 10px;
+        padding: 5px;
+        text-align: center;
+        font-size: 11px;
+    }
+
+    /* Shop section */
+    .shop-section {
+        width: 100%;
+        padding: 5px;
+        box-sizing: border-box;
+        gap: 10px;
+    }
+
+    /* Boxes */
+    .box {
+        width: calc(50% - 5px);
+        height: auto;
+        min-height: 300px;
+        padding: 10px 0;
+        margin-top: 5px;
+        box-sizing: border-box;
+    }
+
+    .box-content {
+        margin: 0;
+        padding: 10px;
+    }
+
+    .box h2 {
+        font-size: 16px;
+        min-height: auto;
+        margin-bottom: 8px;
+    }
+
+    /* Images */
+    .box-img {
+        width: 100%;
+        height: 180px;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .grid-container {
+        gap: 6px;
+    }
+
+    .grid-item img {
+        width: 100%;
+        height: 90px;
+        object-fit: cover;
+    }
+
+    .grid-item p {
+        font-size: 11px;
+        margin-top: 3px;
+    }
+
+    .box-content a {
+        font-size: 12px;
+    }
+
+    /* Prevent horizontal scrolling */
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
     }
 }
